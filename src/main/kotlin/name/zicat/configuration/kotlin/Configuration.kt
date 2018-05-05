@@ -15,7 +15,6 @@ abstract class Configuration<T>(abstractSchema: AbstractSchema<T>) {
      */
     abstract fun load(): T
 
-?
     fun createInstance(): T? {
         instance = load()
         return instance
