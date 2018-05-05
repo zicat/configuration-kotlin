@@ -13,7 +13,7 @@ abstract class Configuration<T>(abstractSchema: AbstractSchema<T>) {
      *
      * @return t
      */
-    abstract fun load(): T
+    internal abstract fun load(): T
 }
 
 class LocalConfiguration<T>(url: URL, abstractSchema: AbstractSchema<T>): Configuration<T>(abstractSchema) {
