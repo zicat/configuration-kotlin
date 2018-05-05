@@ -13,7 +13,7 @@ abstract class Configuration<T>(abstractSchema: AbstractSchema<T>) {
      *
      * @return t
      */
-    internal abstract fun parse(): T
+    protected abstract fun parse(): T
 }
 
 class LocalConfiguration<T>(url: URL, abstractSchema: AbstractSchema<T>): Configuration<T>(abstractSchema) {
