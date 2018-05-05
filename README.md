@@ -49,7 +49,7 @@ class PropertiestSchemaTest {
     Configuration is the abstract class that maintain the instance mapping to the file
 
 ### LocalConfiguration
-    LocalConfiguration is the class that miantain the instance mapping to the file that from local file system
+    LocalConfiguration is the class that maintain the instance mapping to the file that from local file system
 ```kotlin
 class ConfigurationTest {
 
