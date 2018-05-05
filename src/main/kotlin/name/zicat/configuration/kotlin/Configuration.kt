@@ -7,22 +7,22 @@ import java.net.URL
 abstract class Configuration<T>(abstractSchema: AbstractSchema<T>) {
 
     val abstractSchema = abstractSchema
-    var instance: T? = null
+    abstract var instance: T
+
     /**
      *
      * @return t
      */
     abstract fun load(): T
-
-    fun createInstance(): T? {
-        instance = load()
-        return instance
-    }
 }
 
 class LocalConfiguration<T>(url: URL, abstractSchema: AbstractSchema<T>): Configuration<T>(abstractSchema) {
 
     val url = url
+
+    override var instance: T
+        get() = load()
+        set(value) {}
 
     override fun load(): T {
 
