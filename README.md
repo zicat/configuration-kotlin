@@ -8,7 +8,7 @@
     Schema is the interface of parsing file. 
     The file can be a string instance or inputstream instance.
 
-### parse xml file
+### Parse xml file
 
 ```kotlin
 @XmlRootElement(name = "configuration")
@@ -31,7 +31,7 @@ class XmlSchemaTest {
 }
 ```
 
-### parse properties file
+### Parse properties file
 ```kotlin
 class PropertiestSchemaTest {
 
