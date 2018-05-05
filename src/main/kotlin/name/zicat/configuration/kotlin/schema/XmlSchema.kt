@@ -6,7 +6,6 @@ import java.io.Reader
 import java.nio.charset.Charset
 import javax.xml.bind.JAXBContext
 
-
 fun <T> unmarshal(inputStream: InputStream, clazz: Class<T>, charset: Charset): T {
     val reader = InputStreamReader(inputStream, charset)
     return unmarshal(reader, clazz)

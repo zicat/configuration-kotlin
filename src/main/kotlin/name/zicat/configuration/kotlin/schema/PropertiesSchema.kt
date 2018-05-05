@@ -16,5 +16,4 @@ class PropertiesSchema(charset: Charset) : AbstractSchema<Properties>(Properties
     override fun parse(s: InputStream): Properties {
         return propertiesParse(s, charset)
     }
-
 }

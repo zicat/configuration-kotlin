@@ -4,7 +4,6 @@ import name.zicat.configuration.kotlin.schema.AbstractSchema
 import java.io.InputStream
 import java.net.URL
 
-
 abstract class Configuration<T>(abstractSchema: AbstractSchema<T>) {
 
     val abstractSchema = abstractSchema
@@ -35,5 +34,4 @@ class LocalConfiguration<T>(url: URL, abstractSchema: AbstractSchema<T>): Config
             s?.close()
         }
     }
-
 }

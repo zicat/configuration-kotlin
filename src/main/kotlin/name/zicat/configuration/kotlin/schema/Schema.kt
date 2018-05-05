@@ -5,7 +5,6 @@ import java.io.InputStream
 import java.nio.charset.Charset
 import java.nio.charset.StandardCharsets
 
-
 interface Schema<S, T> {
 
     fun parse(s: S): T
@@ -33,5 +32,4 @@ abstract class AbstractSchema<T>(clazz: Class<T>, charset: Charset = StandardCha
             inputStream?.close()
         }
     }
-
 }
